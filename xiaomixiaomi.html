@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .title{
+            width: 100%;
+            height: 40px;
+            margin: 0 auto; 
+            background-color: rgba(28, 26, 26, 0.934);
+        }
+        .menu{
+            margin-top: 10px;
+            margin-left: 5vw;
+           float: left;
+           
+           font-size: x-small;
+           
+        }
+        a{
+            
+            list-style: none;
+            color:gray;
+            text-decoration: none;
+        }
+          a:hover {
+          color: white;
+          }
+
+        
+        span{
+           color: gray;
+        }
+        
+        .register{
+
+            margin-top: 10px;
+            margin-right: 5vw;
+           float: right;
+           font-size: x-small;   
+        }
+        .title2{
+            width: 100%;
+            height: 100px;
+            position: relative;
+          
+        }
+        .logo{
+            position: absolute;
+            top:15%;
+            left:5vw;
+            
+        }
+        .logo img{
+            width: 60px;
+            height: 60px;
+        }
+        .text{
+            top:15%;
+            position: absolute;
+            left:22%;
+        }
+        .text ul li{
+            float: left;
+            margin: 10px;
+            list-style: none;
+        }
+        li:hover{
+        color:#ff6700;
+        }
+        
+        .box{
+            height: 460px;
+            position: relative;
+            left:5vw;
+            width: 90%;
+            background-color: #f6f5f5;
+        }
+        .contest{
+            position: absolute;
+            width: 20%;
+            height: 460px;
+            float: left;
+            z-index: 1000;
+            background-color: rgba(105, 101, 101, .6);
+        }
+        .contest ul{
+            list-style: none;
+            padding: 0%;
+            margin-top: 0%;
+        }
+        .contest li {
+          width: 100%;
+          height: 46px;
+          font-size: small;
+          line-height: 46px;
+        }
+ 
+        .contest li:hover {
+        background-color: #ff6700;
+        }
+ 
+        .contest li a {
+          margin-left: 10px;
+          color: #f6f5f5;
+        }
+        .pics a img{
+            position: absolute;
+            left: 0%;
+            right: 0%;
+            height: 460px;
+            width:100%;
+        }
+        .points{
+            position: absolute;
+            bottom: 5%;
+            right: 3%;
+            float: right;
+            margin-top: 40px;
+
+        }
+        .points a{
+            display: block;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            float: left;
+            border: 2px solid aqua;
+            margin: 4px;
+            margin-top: 40px;
+        }
+        .points .show{
+            background: rgba(225, 225, 225, 0.3);
+            border-color: rgba(0, 0, 0, 0.5);
+        }
+        .points a:hover{
+            background: rgba(225, 225, 225, 0.3);
+            border-color: rgba(0, 0, 0, 0.5);
+        }
+        .points .hidden{
+            background: rgba(0, 0, 0, 0.5);
+            border-color: rgba(225, 225, 225, 0.3);
+        }
+        .btn_left button{
+            font-size: xx-large;
+            display: block;
+            width: 41px;
+            height: 69px;
+            left: 20%;
+            border: 0ch;
+            position: absolute;
+            top: 45%;
+            background: #f6f5f500;
+            color:whitesmoke;
+            background-position-x: -83px;
+        }
+        .btn_left button:hover{
+            background: rgba(72, 71, 71, 0.249);
+            text-decoration: none;
+        }
+        .btn_right button{
+            color:whitesmoke;
+            font-size: xx-large;
+            display: block;
+            width: 41px;
+            height: 69px;
+            border: 0ch;
+            position: absolute;
+            top: 45%;
+            right: 0vw;
+            background: #f6f5f500;
+            background-position-x: 41px;
+        }
+        .btn_right button:hover{
+            background: rgba(72, 71, 71, 0.249);
+             text-decoration: none;
+        }
+        .last {
+            height: 270px;
+            position: relative;
+            left:5vw;
+            width: 100%;
+            
+        }
+        .box1{
+            float: left;
+            margin-right: 0.5vw;
+            margin-top: 1vw;
+            width: 21.7vw;
+            height: 220px;
+            background-color: whitesmoke;
+        }
+        
+        
+
+        
+
+
+
+</style>
+<body>
+    <div class="title">
+        <div class="menu">
+        <a href="#">小米商城</a>
+        <span>|</span>
+        <a href="#">MIUI</a>
+        <span>|</span>
+        <a href="#">IoT</a>
+        <span>|</span>
+        <a href="#">云服务</a>
+        <span>|</span>
+        <a href="#">金融</a>
+        <span>|</span>
+        <a href="#">有品</a>
+        <span>|</span>
+        <a href="#">小爱开放平台</a>
+        <span>|</span>
+        <a href="#">企业团购</a>
+        <span>|</span>
+        <a href="#">资质证照</a>
+        <span>|</span>
+        <a href="#">协议规则</a>
+        <span>|</span>
+        <a href="#">下载app</a>
+        <span>|</span>
+        <a href="#">小米商城APP</a>
+        <span>|</span>
+        <a href="#">Select Location</a>
+        </div>
+        <div class="register">
+            <a href="#" class="topbar-a">登录</a>
+            <span class="sep">|</span>
+            <a href="#" class="topbar-a">注册</a>
+            <span class="sep">|</span>
+            <a href="#" class="topbar-a">消息通知</a>
+        </div>
+    </div>
+    <div class="title2">
+        <div class="logo">
+            <img src="logo.png">
+        </div>
+        <div class="text">
+            <ul>
+                <li>Xiaomi手机</li>
+                <li>Redimi手机</li>
+                <li>电视手机</li>
+                <li>笔记本</li>
+                <li>平板</li>
+                <li>家电</li>
+                <li>路由器</li>
+                <li>服务中心</li>
+                <li>社区</li>
+            </ul>
+        </div>
+        
+    </div> 
+        <div class="box">
+            <div class="contest">
+                <ul class="site-category-list">
+                    <li>
+                        <a href="#">手机 电话卡</a>
+                    </li>
+                    <li>
+                        <a href="#">电视 盒子</a>
+                    </li>
+                    <li>
+                        <a href="#">笔记本 显示器</a>
+                    </li>
+                    <li>
+                        <a href="#">家电 插线板</a>
+                    </li>
+                    <li>
+                        <a href="#">出行 穿戴</a>
+                    </li>
+                    <li>
+                        <a href="#">智能 路由器</a>
+                    </li>
+                    <li>
+                        <a href="#">电源 配件</a>
+                    </li>
+                    <li>
+                        <a href="#">健康 儿童</a>
+                    </li>
+                    <li>
+                        <a href="#">耳机 音响</a>
+                    </li>
+                    <li>
+                        <a href="#">生活 箱包</a>
+                    </li>
+                </ul>
+    
+            
+            </div>
+           
+                <div class="pics">
+                    <a >
+                        <img src="1.png" class="img" alt="">
+                    </a>
+                    <a >
+                        <img src="2.png" class="img" alt="">
+                    </a>
+                    <a >
+                        <img src="3.png" class="img" alt="">
+                    </a>
+                    <a >
+                        <img src="4.png" class="img" alt="">
+                    </a>
+                    <a >
+                        <img src="5.png" class="img" alt="">
+                    </a>
+                    <a >
+                        <img src="5.png" class="img" alt="">
+                    </a>
+           
+               <div class="points">
+                    <a class="show"></a>
+                    <a  class="hidden"></a>
+                    <a  class="hidden"></a>
+                    <a  class="hidden"></a>
+                    <a  class="hidden"></a>
+                    
+                </div>
+                <a  class="btn btn_left"><button><</button></a>
+                <a class="btn btn_right"><button>></button></a>
+               </div>
+            </div>
+        </div>  
+    <div class="last">
+        <div class="box1"></div>
+        <div class="box1"></div>
+        <div class="box1"></div>
+        <div class="box1"></div>
+    </div>
+    <script>
+        var imgs=document.querySelectorAll(".img");
+    var points=document.querySelectorAll(".points a");
+    var btns=document.querySelectorAll(".btn");
+    var nowIndex=0;
+    var timer=null;
+    imgs[1].style.display="block";
+    for(var i=1;i<imgs.length;i++){
+        imgs[i].style.display="none";
+    }
+    function hiddenImages(){
+    for(var i=0;i<imgs.length;i++){
+        imgs[i].style.display="none";
+    }
+}
+function hiddenPoints(){
+    for(var i=0;i<points.length;i++){
+        points[i].className="hidden";
+    }
+}
+function changeAll(){
+    hiddenImages();
+    hiddenPoints();
+    imgs[nowIndex].style.display="block";
+    points[nowIndex].className="show";
+}
+function bannerPlay(){
+    timer=setInterval(function(){
+        
+        changeAll();
+        nowIndex++;
+        if(nowIndex>=imgs.length-1)
+        {
+            nowIndex=0;
+        }
+    },3000)
+}
+for(var i=0;i<points.length;i++){
+   points[i].onmouseover=function(){
+       clearInterval(timer);
+    }
+    points[i].onmouseout=function(){
+        bannerPlay();
+    }
+    points[i].index=i;
+    points[i].onclick=function(){
+        nowIndex=this.index;
+        changeAll();
+    }
+}
+for(var i=0;i<btns.length;i++){
+    btns[i].onmouseover=function(){
+        clearInterval(timer);
+    }
+    btns[i].onmouseout=function(){
+        bannerPlay();
+    }
+}
+btns[0].onclick=function(){
+    nowIndex--;
+    if(nowIndex<0){
+        nowIndex+=5;
+    }
+    changeAll();
+}
+btns[1].onclick=function(){
+    nowIndex++;
+    if(nowIndex>=points.length){
+        nowIndex=0;
+    }
+    changeAll();
+}
+
+bannerPlay();
+    </script>
+</body>
+</html>
